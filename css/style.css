@@ -1,0 +1,128 @@
+html, body{
+    font-size: 100%;
+	font-family: 'Open Sans', sans-serif;
+	background:#ffffff;
+	margin: 0;
+}
+p,ul li,ol li{
+	margin:0;
+	font-size:15px;
+}
+h1,h2,h3,h4,h5,h6{
+	margin:0;
+	font-family: 'Cairo', sans-serif;
+}
+ul,label{
+	margin:0;
+	padding:0;
+}
+body a:hover{
+	text-decoration:none;
+}
+input[type="submit"], a{
+	-webkit-transition: 0.5s ease-in;
+    -moz-transition: 0.5s ease-in;
+    -ms-transition: 0.5s ease-in;
+    -o-transition: 0.5s ease-in;
+    transition:0.5s ease-in;
+}
+img{
+	width:100%;
+}
+h1 a.navbar-brand {
+    color: #eee !important;
+    height: inherit;
+    font-size: 25px;
+    text-transform: uppercase;
+    -webkit-transition:.5s ease-in;
+	-moz-transition:.5s ease-in; 
+	transition:.5s ease-in;
+}
+nav.navbar.navbar-default.navbar-fixed-top {
+    background:rgba(0, 0, 0, 0.5);
+    /*background: rgba(0, 0, 0, 0.8);*/
+    border: none;
+    padding: .6em 8em;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #eee;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.navbar-default .navbar-nav > li > a:hover {
+	color: #eee;
+    display: block;
+    background-color: #3977AD;
+}
+.banner{
+	background: url(https://static.pexels.com/photos/257937/pexels-photo-257937.jpeg) no-repeat 0px 0px;
+	background-color: #fff;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    min-height: 650px;
+    position: relative;
+}
+.agileinfo-dot {
+    /*background: url(../images/dott.png)repeat 0px 0px;*/
+    background-color: rgba(0,0,0,0.3);
+    background-size: 2px;
+    -webkit-background-size: 2px;
+    -moz-background-size: 2px;
+    -o-background-size: 2px;
+    -ms-background-size: 2px;
+    min-height: 770px;
+    padding: 1em 0;
+}
+.banner-info{
+	margin: 13em 0 0em 40em;
+    width: 450px;
+    padding: 10px;
+}
+.banner-info h2{
+	font-size: 3.5em;
+    color: #ffffff;
+    line-height: 1.1em;
+    font-weight: 900;
+    text-shadow: 3px 3px #3977AD;
+}
+.banner-info p{
+	margin: 1.5em 0 3em;
+    color: #000;
+    line-height: 28px;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+.about{
+	padding: 0 0 0 5em;
+}
+.about h2{
+	/*text-align: center;*/
+	margin-left: 2em;
+	margin-top: 80px;
+	font-size: 2.5em;
+}
+.about h3{
+    text-align: left;
+    font-size: 1.5em;
+    margin-top: 25px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    outline-offset: 12px;
+    outline: 7px double #ff4f81;
+    outline-offset: 6px;
+    width: 22%;
+	color: #146eb4;
+    margin-left: 0.3em;
+    font-weight: 700;
+    text-align: center;
+}
+.about p{
+	line-height: 28px;
+    letter-spacing: .5px;
+    font-size: 14px;
+    margin: 1em 0;
+}
