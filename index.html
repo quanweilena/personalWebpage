@@ -16,16 +16,21 @@
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+	<!-- <link rel="stylesheet" type="text/css" href="css/font-awesome.css"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	<!-- googlefonts -->
 	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
 	<link href="//fonts.googleapis.com/css?family=Cairo:200,300,400,600,700,900&amp;subset=arabic,latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
 	<!-- //googlefonts -->
 
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
 <div class="banner" id="home">
-	<div class="agileinfo-dot">
+	<div class="layer">
 		<div class="container">
 			<nav class="navbar navbar-default navbar-fixed-top">
 				<div class="navbar-header page-scroll">
@@ -50,9 +55,12 @@
 			</nav>
 
 			<div class="banner-info">
-				<h2 class="animated slideInRight">Hi! I am <br> Lena Zhou!</h2>
-				<p class="animated fadeIn">Aenean congue vitae mauris sed tristique. Mauris quis nulla at sapien blandit. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit. Aenean congue vitae mauris sed tristique. Mauris quis nulla at sapien blandit. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit.</p>
-				<a href="#about" type="button" class="btn btn-primary btn-lg animated infinite pulse">Learn More...</a>
+				<h2 data-aos="fade-left">Hi! I am <br> Lena Zhou!</h2>
+				<p data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-offset="0">Aenean congue vitae mauris sed tristique. Mauris quis nulla at sapien blandit. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit. Aenean congue vitae mauris sed tristique. Mauris quis nulla at sapien blandit. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit.</p>
+				<a href="#about" type="button" class="btn btn-primary btn-lg">Learn More...</a>
+			</div>
+			<div>
+				<a href="#about" class="more-icon animated infinite fadeInDown"><span class="glyphicon glyphicon-menu-down"></span></a>
 			</div>
 		</div>
 	</div>
@@ -60,30 +68,152 @@
 
 <div id="about"  class="about">
 	<div class="container">
-		<h2 class="animated slideInLeft">About Me</h2>
+		<h2 data-aos="fade-right">About Me</h2>
 		<div class="row">
 			<div class="col-md-5">
-				<img src="https://images.pexels.com/photos/106567/pexels-photo-106567.jpeg?w=940&h=650&auto=compress&cs=tinysrgb">
+				<img src="images/pic2.jpeg" >
 			</div>
 			<div class="col-md-7">
-				<h3 class="animated bounceIn">HELLO!</h3>
-				<p class="animated fadeIn">Ut enim ad minima veniam, quis nostrum 
-				exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
-				nisi ut aliquid ex ea commodi consequatur? Quis autem exercitationem ullam corporis suscipit laboriosam, 
-				vel eum iure reprehenderit qui in ea voluptate velit 
-				esse quam nihil molestiae consequatur, vel illum qui 
-				dolorem eum fugiat quo voluptas nulla pariatur.</p>
-				<p class="animated fadeIn">Ut enim ad minima veniam, quis nostrum 
-				exercitationem ullam corporis suscipit laboriosam, 
-				nisi ut aliquid ex ea commodi consequatur? Quis autem 
-				vel eum iure reprehenderit.</p>
+				<h3 class="animated bounceIn">I am...</h3>
+				<!-- <p data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-offset="0">
+				A graduate student enrolled in University of Ottawa who is comprehensively trained in computer technologies. <br>A strong and dynamic researcher who is capable of solving a problem with methodical analysis, and has a keen interest in all new things. <br>A diligent, skilled professional web developer who is experienced with different aspects of the web developing, programming languages, developing environments and tools. <br>An energetic and imaginative young programmer who is always ready to take on new and exciting projects and collaborate with other talented IT professionals to develop the best products.</p> -->
+				<div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-offset="0">
+					<p>A graduate student enrolled in University of Ottawa who is comprehensively trained in computer technologies.</p>
+					<p>A strong and dynamic researcher who is capable of solving a problem with methodical analysis, and has a keen interest in all new things.</p>
+					<p>A diligent, skilled professional web developer who is experienced with different aspects of the web developing, programming languages, developing environments and tools.</p>
+					<p>An energetic and imaginative young programmer who is always ready to take on new and exciting projects and collaborate with other talented IT professionals to develop the best products.</p>
+				</div>
 			</div>
 
 		</div>
 	</div>
 </div>
 
-<br><br><br><br><br><br><br><br>
+<div id="research" class="research">
+	<div class="layer">
+		<div class="container">
+			<h2 data-aos="zoom-in" data-aos-offset="-50">My Research</h2>
+			<div class="row research-item">
+				<div class="col-md-3 ">
+					<div class="research-img">
+						<img class="thumbnail" src="https://images.pexels.com/photos/355948/pexels-photo-355948.jpeg?w=940&h=650&auto=compress&cs=tinysrgb">
+					</div>
+				</div>
+				<div class="col-md-9">
+					<h4>Title 1</h4>
+					<p>
+						Aenean congue vitae mauris sed tristique. Mauris quis nulla at sapien blandit. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit. Aenean congue vitae mauris sed tristique. Mauris quis nulla at sapien blandit. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit.
+					</p>
+					<a href="#"><button type="button" class="btn btn-warning">Related Work</button></a>
+				</div>
+			</div>
 
+			<div class="row research-item">
+				<div class="col-md-3 ">
+					<div class="research-img">
+						<img class="thumbnail" src="https://images.pexels.com/photos/355948/pexels-photo-355948.jpeg?w=940&h=650&auto=compress&cs=tinysrgb">
+					</div>
+				</div>
+				<div class="col-md-9">
+					<h4>Title 1</h4>
+					<p>
+						Aenean congue vitae mauris sed tristique. Mauris quis nulla at sapien blandit. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit. Aenean congue vitae mauris sed tristique. Mauris quis nulla at sapien blandit. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit.
+					</p>
+					<a href="#"><button type="button" class="btn btn-warning">Related Work</button></a>
+				</div>
+			</div>
+
+			<div class="row research-item">
+				<div class="col-md-3 ">
+					<div class="research-img">
+						<img class="thumbnail" src="https://images.pexels.com/photos/355948/pexels-photo-355948.jpeg?w=940&h=650&auto=compress&cs=tinysrgb">
+					</div>
+				</div>
+				<div class="col-md-9">
+					<h4>Title 1</h4>
+					<p>
+						Aenean congue vitae mauris sed tristique. Mauris quis nulla at sapien blandit. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit. Aenean congue vitae mauris sed tristique. Mauris quis nulla at sapien blandit. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit.
+					</p>
+					<a href="#"><button type="button" class="btn btn-warning">Related Work</button></a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<div id="projects" class="projects">
+	<div class="container">
+		<h2 data-aos="zoom-in" data-aos-offset="-50">Projects</h2>
+		<p>
+			Aenean congue vitae mauris sed tristique. Mauris quis nulla at sapien blandit. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit. Aenean congue vitae mauris sed tristique. Mauris quis nulla at sapien blandit. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit.
+		</p>
+	</div>
+</div>
+
+<div id="contact" class="contact">
+	<div class="container">
+		<h2 data-aos="zoom-in" data-aos-offset="-50">Contact Me</h2>
+		<div class="row">
+			<div class="col-md-4">
+				<h4>
+					<span class="fa-stack fa-lg" style="color: #11b563">
+					  <i class="fa fa-circle fa-stack-2x"></i>
+					  <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+					</span>
+				Address
+				</h4>
+				<p>123 Main St, Ottawa, ON</p>
+				<p>Canada</p>
+			</div>
+			<div class="col-md-4">
+				<h4>
+					<span class="fa-stack fa-lg" style="color: #11b563">
+					  <i class="fa fa-circle fa-stack-2x"></i>
+					  <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+					</span>
+				Phone
+				</h4>
+				<P>+1 (111)-222-3333</P>
+				<P>+1 (111)-222-3333</P>
+			</div>
+			<div class="col-md-4">
+				<h4>
+					<span class="fa-stack fa-lg" style="color: #11b563">
+					  <i class="fa fa-circle fa-stack-2x"></i>
+					  <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+					</span>
+				E-mail
+				</h4>
+				<P>example@gmail.com</P>
+				<P>example@gmail.com</P>
+			</div>
+		</div>
+		<div class="contact-icons">
+			<span class="fa-stack fa-lg" style="color: #0084b4">
+			  <i class="fa fa-square fa-stack-2x"></i>
+			  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+			</span>
+			<span class="fa-stack fa-lg" style="color: #3b5998">
+			  <i class="fa fa-square fa-stack-2x"></i>
+			  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+			</span>
+			<span class="fa-stack fa-lg" style="color: #0077B5">
+			  <i class="fa fa-square fa-stack-2x"></i>
+			  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+			</span>
+			<span class="fa-stack fa-lg" style="color: #d34836">
+			  <i class="fa fa-square fa-stack-2x"></i>
+			  <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+			</span>
+		</div>
+	</div>
+	<div class="map-responsive">
+	<iframe src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJrxNRX7IFzkwR7RXdMeFRaoo&key=AIzaSyAWWjC8KyYiWTUGSEoeaZ89HJX0ecCE21A"></iframe>
+	</div>
+</div>
+
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script type="text/javascript">AOS.init({duration: 1200,})</script>
 </body>
 </html>
