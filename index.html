@@ -17,22 +17,22 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<!-- <link rel="stylesheet" type="text/css" href="css/font-awesome.css"> -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<!-- googlefonts -->
-	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
-	<link href="//fonts.googleapis.com/css?family=Cairo:200,300,400,600,700,900&amp;subset=arabic,latin-ext" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
 	<!-- //googlefonts -->
 
 </head>
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="page-top" data-spy="scroll" data-target="#navbar-example" data-offset="0">  
 
 <div class="banner" id="home">
 	<div class="layer">
 		<div class="container">
-			<nav class="navbar navbar-default navbar-fixed-top">
+			<nav class="navbar navbar-default navbar-fixed-top" id="navbar-example">
 				<div class="navbar-header page-scroll">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 						<span class="sr-only">Personal Webpage</span>
@@ -40,16 +40,17 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<h1><a class="navbar-brand" href="index.html">Personal Webpage</a></h1>
+					<h1><a class="navbar-brand" href="#">Personal Webpage</a></h1>
 				</div> 
 				<div class="collapse navbar-collapse navbar-ex1-collapse">
-					<ul class="nav navbar-nav navbar-right">
-						<li class="hidden"><a class="page-scroll" href="#page-top"></a>	</li>
-						<li><a class="page-scroll scroll" href="#home">Home</a></li>
-						<li><a class="page-scroll scroll" href="#about">About</a></li>
-						<li><a class="page-scroll scroll" href="#research">Research</a></li>
-						<li><a class="page-scroll scroll" href="#projects">Projects</a></li>
-						<li><a class="page-scroll scroll" href="#contact">Contact</a></li>
+					<ul class="nav navbar-nav navbar-right nav-pills">
+						<li class="hidden nav-item"><a class="page-scroll" href="#page-top"></a>	</li>
+						<li class="nav-item"><a class="page-scroll scroll nav-link" href="#home">Home</a></li>
+						<li class="nav-item"><a class="page-scroll scroll nav-link" href="#about">About</a></li>
+						<li class="nav-item"><a class="page-scroll scroll nav-link" href="#experience">Experience</a></li>
+						<li class="nav-item"><a class="page-scroll scroll nav-link" href="#research">Research</a></li>
+						<li class="nav-item"><a class="page-scroll scroll nav-link" href="#projects">Projects</a></li>
+						<li class="nav-item"><a class="page-scroll scroll nav-link" href="#contact">Contact</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -75,8 +76,6 @@
 			</div>
 			<div class="col-md-7">
 				<h3 class="animated bounceIn">I am...</h3>
-				<!-- <p data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-offset="0">
-				A graduate student enrolled in University of Ottawa who is comprehensively trained in computer technologies. <br>A strong and dynamic researcher who is capable of solving a problem with methodical analysis, and has a keen interest in all new things. <br>A diligent, skilled professional web developer who is experienced with different aspects of the web developing, programming languages, developing environments and tools. <br>An energetic and imaginative young programmer who is always ready to take on new and exciting projects and collaborate with other talented IT professionals to develop the best products.</p> -->
 				<div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-offset="0">
 					<p>A graduate student enrolled in University of Ottawa who is comprehensively trained in computer technologies.</p>
 					<p>A strong and dynamic researcher who is capable of solving a problem with methodical analysis, and has a keen interest in all new things.</p>
@@ -89,12 +88,34 @@
 	</div>
 </div>
 
+<div id="experience" class="experience">
+	<div class="container">
+		<h2 data-aos="zoom-in" data-aos-offset="-50">Experiences</h2>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="exp-box-edu">
+					<div class="layer">
+						<h3>Education</h3>
+					</div>
+				</div>
+			</div> 
+			<div class="col-md-6">
+				<div class="exp-box-work">
+					<div class="layer">
+						<h3>Work</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
 <div id="research" class="research">
 	<div class="layer">
 		<div class="container">
 			<h2 data-aos="zoom-in" data-aos-offset="-50">My Research</h2>
 			<div class="row research-item">
-				<div class="col-md-3 ">
+				<div class="col-md-3">
 					<div class="research-img">
 						<img class="thumbnail" src="https://images.pexels.com/photos/355948/pexels-photo-355948.jpeg?w=940&h=650&auto=compress&cs=tinysrgb">
 					</div>
@@ -145,9 +166,22 @@
 <div id="projects" class="projects">
 	<div class="container">
 		<h2 data-aos="zoom-in" data-aos-offset="-50">Projects</h2>
-		<p>
-			Aenean congue vitae mauris sed tristique. Mauris quis nulla at sapien blandit. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit. Aenean congue vitae mauris sed tristique. Mauris quis nulla at sapien blandit. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit.
-		</p>
+		<div class="row">
+			<div class="col-md-6">
+				<h4>Project Title</h4>
+				<p>
+					Aenean congue vitae mauris sed tristique. Mauris quis nulla at sapien blandit. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit. Aenean congue vitae mauris sed tristique. Mauris quis nulla at sapien blandit. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit.
+				</p>
+				<a href="#"><button type="button" class="btn btn-warning">Related Work</button></a>
+			</div>
+			<div class="col-md-6">
+				<h4>Project Title</h4>
+				<p>
+					Aenean congue vitae mauris sed tristique. Mauris quis nulla at sapien blandit. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit. Aenean congue vitae mauris sed tristique. Mauris quis nulla at sapien blandit. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit.
+				</p>
+				<a href="#"><button type="button" class="btn btn-warning">Related Work</button></a>
+			</div>
+		</div>
 	</div>
 </div>
 
